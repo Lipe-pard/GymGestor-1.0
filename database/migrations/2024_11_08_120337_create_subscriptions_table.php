@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('client_id');
+            $table->decimal('amount', 8, 2);
+            $table->date('due_date');
+            $table->date('payment_date')->nullable();
+            $table->string('status');
             $table->timestamps();
         });
     }
