@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="p-12">
         <x-notification/>
         <livewire:client.create />
     </div>
